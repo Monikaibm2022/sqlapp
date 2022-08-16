@@ -17,14 +17,16 @@
    </tr>
    </thead>
    <tbody>
-   <tr>
+   
        @foreach(var product in @Model.products)
         {
+       <tr>
             <td>@product.productid</td>
             <td>@product.productname</td>
             <td>@product.quentity</td>
+           </tr>
         }
        
-    </tr>
+    
     </tbody>
 </table>
